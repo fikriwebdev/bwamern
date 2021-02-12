@@ -23,7 +23,7 @@ export default function Button(props) {
             style={props.style}>
                 {props.isLoading ? (
                     <>
-                        <span className="spinner-border spinner-border-sm mx-5"></span>
+                        <span className="mx-5 spinner-border spinner-border-sm"></span>
                         <span className="sr-only">Loading...</span>
                     </>
                 ) : (
@@ -83,6 +83,7 @@ Button.propTypes = {
     href: propTypes.string,
     className: propTypes.string,
     isDisabled: propTypes.bool,
+    isPrimary: propTypes.bool,
     isExternal: propTypes.bool,
     isLoading: propTypes.bool,
     isSmall: propTypes.bool,
