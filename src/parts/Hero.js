@@ -22,7 +22,9 @@ export default function Hero(props) {
           <h1 className="mb-3 font-weight-bold line-height-1">
             Forget Busy Work, <br /> Start Next Vacation
           </h1>
-          <p className="text-gray-900 font-weight-light">
+          <p
+            className="text-gray-500 font-weight-light w-75 mb-4"
+            style={{ lineHeight: "170%" }}>
             We provide what you need to enjoy your holiday with family. Time to
             make another memorable moments.
           </p>
@@ -34,7 +36,7 @@ export default function Hero(props) {
             Show Me Now
           </Button>
 
-          <div className="mt-5 row">
+          <div className="row" style={{ marginTop: 80 }}>
             <div className="col-auto" style={{ marginRight: 35 }}>
               <img
                 width="36"
@@ -77,6 +79,23 @@ export default function Hero(props) {
                 <span className="text-gray-500 font-weight-light">Cities</span>
               </h6>
             </div>
+          </div>
+        </div>
+
+        <div className="col-6 pl-5">
+          <div style={{ width: 520, height: 410 }}>
+            <img
+              src={imageHero}
+              alt="home with couches"
+              className="img-fluid position-absolute"
+              style={{ margin: "-30px 0 0 -30px", zIndex: 1 }}
+            />
+            <img
+              src={imageHero_}
+              alt="home with couches frame"
+              className="img-fluid position-absolute"
+              style={{ margin: "0 -15px -15px 0" }}
+            />
           </div>
         </div>
       </div>
